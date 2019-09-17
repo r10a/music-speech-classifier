@@ -81,14 +81,14 @@ classifiers are as below -
 
 2.2.1 Naive Bayes
 
-A simple Naive Bayes classifier. Accuracy is found to be92.37%. The confusion matrix is as below -
+A simple Naive Bayes classifier. Accuracy is found to be 92.37%. The confusion matrix is as below -
 
 ```
 ()music speech
 music 136 9
 speech 13 131
 ```
-The accuracy after PCA is93.06% and is the only case where accuracy improved after PCA.
+The accuracy after PCA is 93.06% and is the only case where accuracy improved after PCA.
 
 2.2.2 Decision Tree
 
@@ -99,7 +99,7 @@ A simple Decision tree classifier. Accuracy is found to be 91 %. The confusion m
 music 136 9
 speech 11 133
 ```
-The accuracy after PCA is91.67% and stays roughly the same after performing PCA.
+The accuracy after PCA is 91.67% and stays roughly the same after performing PCA.
 
 
 2.2.3 K-Nearest Neighbor
@@ -112,19 +112,19 @@ confusion matrix is as below -
 music 137 8
 speech 5 139
 ```
-The accuracy after PCA is94.79%.
+The accuracy after PCA is 94.79%.
 
 ### 2.2.4 SVM
 
 A soft margin SVM classifier withC= 0. 1. Linear kernal was used for simplicity. Accuracy is found
-to be96.53%. The confusion matrix is as below -
+to be 96.53%. The confusion matrix is as below -
 
 ```
 music speech
 ()music 140 5
 speech 5 139
 ```
-The accuracy after PCA is95.84%.
+The accuracy after PCA is 95.84%.
 
 2.2.5 Simple Neural Network
 
@@ -137,13 +137,13 @@ music speech
 ()music 134 11
 speech 6 138
 ```
-The accuracy after PCA is92.71%.
+The accuracy after PCA is 92.71%.
 
 2.2.6 Ensemble
 
 The classifier was a combination of Naive Bayes, SVM, KNN, decision tree, and the Simple neural
 network classifiers. A voting strategy was implemented. The final output is decided based on the
-majority results of each of individual classifiers. Accuracy is found to be96.18%. The confusion
+majority results of each of individual classifiers. Accuracy is found to be 96.18%. The confusion
 matrix is as below -
 
 ```
@@ -151,11 +151,11 @@ music speech
 ()music 140 5
 speech 5 139
 ```
-The accuracy after PCA is96.53%.
+The accuracy after PCA is 96.53%.
 
 2.2.7 Convolutional Neural Network
 
-Accuracy is found to be98.85%. The samples where divided into training & test batches of 202 & 87
+Accuracy is found to be 98.85%. The samples where divided into training & test batches of 202 & 87
 respectively. The model was trained for 15 epochs and mini-batch size was set to be 50. Categorical
 cross-entropy was used as the loss function, while the Adam optimizer was used for optimization.
 
@@ -168,8 +168,8 @@ accuracy only drops a little with huge drop in feature space.
 ```
 Figure 1: Accuracies of all classifiers without PCA, i.e., feature space = 60
 ```
-From the above figure, it is clear that CNN is the best performing classifier with accuracy of98.85%.
-SVM takes the second place with96.53% accuracy.
+From the above figure, it is clear that CNN is the best performing classifier with accuracy of 98.85%.
+SVM takes the second place with 96.53% accuracy.
 
 ```
 Figure 2: Accuracies of all classifiers except CNN with PCA, i.e., feature space = 11
